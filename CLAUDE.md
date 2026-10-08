@@ -14,6 +14,10 @@ Threshold logic has multiple consumers. Trace the active implementation and test
 
 Prefer registered code and tests, then **.github/workflows/ci.yml**, Makefiles, Docker/Compose, current environment examples, and **docs/single-client-conversion.md**. Dated audits and pre-conversion feature documents are historical evidence.
 
+## Change records
+
+A change with a product decision behind it starts as a file in **intent/**, which links to its design in **docs/superpowers/specs/** and its plan in **docs/superpowers/plans/**. Read that chain before implementing, and when the implementation departs from the plan, update the plan in the same commit. These files record what was asked and decided, not current behavior. **intent/README.md** has the format.
+
 ## Repository map
 
 - **backend/app/** — FastAPI API, trust/autopilot, analytics, auth, services, and Celery workers
